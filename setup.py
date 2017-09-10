@@ -2,7 +2,7 @@ from setuptools import setup
 from sys import version_info
 
 requirements = ["beautifulsoup4", "requests"]
-if sys.version_info < (2,7,3) and sys.version_info < (3,2,2):
+if version_info < (2,7,3) and version_info < (3,2,2):
     requirements.append("lxml")
 
 setup(
